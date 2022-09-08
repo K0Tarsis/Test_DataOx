@@ -8,3 +8,4 @@ The database connection parameters are stored in the models.py, settings for con
 
 Data stored: Title, Picture url, City, Beds, Description, Price and currency is separated, Date. 
 The data has been uploaded to the data folder. Where apartments.xlsx is the information stored in Google Sheets. And folder 16565 is a database made by Postgresql.
+If there were certain problems with parsing, the default values was set. For the number of beds it is 1, for the price it is 0
