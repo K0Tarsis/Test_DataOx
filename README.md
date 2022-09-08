@@ -6,4 +6,5 @@ All dependencies are recorded in the requirements.txt file. To install use coman
 Launching occurs through a file pars.py, to prevent ban, pagination occurs with a certain interval and sequentially.
 The database connection parameters are stored in the models.py, settings for connection to the google sheets in the pygsheet.py file
 
-Data stored: Title, Picture url, City, Beds, Description, Price and currency is separated, Date.
+Data stored: Title, Picture url, City, Beds, Description, Price and currency is separated, Date. 
+The data has been uploaded to the data folder. Where apartments.xlsx is the information stored in Google Sheets. And folder 16565 is a database made by Postgresql.
