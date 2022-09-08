@@ -33,17 +33,16 @@ def main():
 
                 try:
                     pict_url = item.find_element(By.CLASS_NAME, "image").find_element(By.TAG_NAME, "img").get_attribute('data-src')
-                    if pict_url == None:
+                    if pict_url is None:
                         pict_url = 'Dont Have Pict'
                 except Exception:
                     pict_url = 'Dont Have Pict'
 
-
                 title = item.find_element(By.CLASS_NAME, 'title').text.strip()
-                dt_str = item.find_element(By.CLASS_NAME, 'date-posted').text
+                dt_str = item.find_element(By.CLASS_NAME, 'location').find_elements(By.TAG_NAME, 'span')[-1].text
 
                 try:
-                    date = datetime.strptime(dt_str, '%d/%m/%y').strftime('%d-%m-%Y')
+                    date = datetime.strptime(dt_str, '%d/%m/%Y').strftime('%d-%m-%Y')
                 except Exception:
                     date = datetime.now().strftime('%d-%m-%Y')
 
